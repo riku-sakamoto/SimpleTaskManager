@@ -51,15 +51,11 @@ def app_start(json_file_path: str, browser: object):
 if __name__ == "__main__":
 
     JSON_FILE = "./data/tasks.json"
-    YAML_FILE = "./setting.yaml"
-
-    with open(YAML_FILE, "r") as fr:
-        data = yaml.safe_load(fr)
-    BROWSER_PATH = data["BROWSER_PATH"]
-
-    browser = webbrowser.get(BROWSER_PATH +' %s')
 
     try:
+        # デフォルトのブラウザを取得
+        browser = webbrowser.get()
+
         app_start(JSON_FILE, browser)
     except Exception as ex:
         print(ex)

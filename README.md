@@ -24,18 +24,26 @@ AtCoderやLPICなどWeb上の各種問題を繰り返し解くためのとても
 ]
 ```
 
-### 2. ブラウザの登録
+### 2. 起動
 
-`setting.yaml`にて起動するブラウザのパスを設定する（デフォルトはChrome）
-
-```yaml
-BROWSER_PATH: 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
-```
-
-### 3. 起動
-
-以下のコマンドで起動する。各設問に回答することで問題を進める。なお，問題は'star - count'を降順に並べ替えた優先度で出題される。
+以下のコマンドで起動する。各設問に回答することで問題を進める。なお，問題は'star - count'を降順に並べ替えた優先度で出題され，デフォルトのブラウザによって対象のURLを自動で開く。
 
 ```python
 pipenv run python main.py
+```
+
+以下のようにコマンドプロンプト上で対話的に実行する。
+
+```
+Number of tasks: 3
+Problems : 1/3
+https://atcoder.jp/contests/typical90/tasks/typical90_f, star: 2, count: 0
+Solved? (y or n): n
+Problems : 2/3
+https://atcoder.jp/contests/typical90/tasks/typical90_g, star: 2, count: 0
+Solved? (y or n): n
+Problems : 3/3
+https://atcoder.jp/contests/typical90/tasks/typical90_t, star: 2, count: 0
+Solved? (y or n): n
+Continue? (y or n): n
 ```
