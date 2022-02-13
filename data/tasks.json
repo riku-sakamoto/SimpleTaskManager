@@ -1,0 +1,12 @@
+[
+    {
+        "url": "sample.url",
+        "star": 1,
+        "count": 3
+    },
+    {
+        "url": "sample2.url",
+        "star": 2,
+        "count": 2
+    }
+]
