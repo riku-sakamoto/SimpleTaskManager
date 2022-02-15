@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import json
-import yaml
 from typing import List
 import webbrowser
 
